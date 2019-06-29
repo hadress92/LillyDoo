@@ -1,0 +1,15 @@
+easy_admin:
+  site_name: '<strong>Lilly Doo</strong>'
+
+  design:
+    brand_color: '#000000'
+#    assets:
+#      css:
+#        - '/bundles/app/assets/global/admin/admin.css'
+    menu:
+      - { label: 'User', icon: 'user', entity: 'User'}
+      - { label: 'Address', icon: 'address-book', entity: 'Address'}
+
+imports:
+  - { resource: entities/user.yml }
+  - { resource: entities/address.yml }

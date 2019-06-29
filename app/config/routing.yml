@@ -1,0 +1,17 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+easy_admin_bundle:
+    resource: "@EasyAdminBundle/Controller/AdminController.php"
+    type:     annotation
+    prefix:   /admin
+
+
+_translation_webui:
+    resource: "@TranslationBundle/Resources/config/routing_webui.yml"
+    prefix:  /admin
+
+# config/routing_dev.yml
+_translation_profiler:
+    resource: '@TranslationBundle/Resources/config/routing_symfony_profiler.yml'

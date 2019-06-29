@@ -1,0 +1,36 @@
+easy_admin:
+  entities:
+    Address:
+      class: AppBundle\Entity\Address
+      controller: AppBundle\Controller\AdminController
+      label: 'Address'
+      list:
+        title: 'Address'
+        actions:
+          - { name: 'new', icon: 'plus',    label: 'Add Address' }
+          - { name: 'edit', icon: 'pencil', label: 'Edit' }
+          - { name: 'delete', icon: 'trash-o', label: 'Delete' }
+          - { name: '-search' }
+        fields:
+          - { property: 'firstname' }
+          - { property: 'lastname' }
+          - { property: 'streetNumber' }
+          - { property: 'zipCode', template: 'easyadmin/address/preview_fields/zipcode.html.twig'  }
+          - { property: 'city' }
+          - { property: 'country', template: 'easyadmin/address/preview_fields/country.html.twig' }
+          - { property: 'phoneNumber', template: 'easyadmin/address/preview_fields/phonenumber.html.twig' }
+          - { property: 'birthday' }
+          - { property: 'user.getEmail', label: 'Email' }
+          - { property: 'image', type: 'image', base_path: '%app.path.address_images%' }
+      form:
+        fields:
+          - { property: 'firstname' }
+          - { property: 'lastname' }
+          - { property: 'streetNumber' }
+          - { property: 'zipCode' }
+          - { property: 'city' }
+          - { property: 'country', type: 'choice' }
+          - { property: 'phoneNumber' }
+          - { property: 'birthday', type_options: { widget: 'single_text' } }
+          - { property: 'user', type: 'entity' }
+          - { property: 'imageFile', type: 'vich_image' }

@@ -1,0 +1,24 @@
+easy_admin:
+  entities:
+    User:
+      class: AppBundle\Entity\User
+      label: 'Users'
+      list:
+        title: 'Users'
+        actions:
+          - { name: 'new', icon: 'plus',    label: 'Add User' }
+          - { name: 'edit', icon: 'pencil', label: 'Edit' }
+          - { name: 'delete', icon: 'trash-o', label: 'Delete' }
+          - { name: '-search' }
+        fields:
+          - { property: 'username', label: 'Username' }
+          - { property: 'email', label: 'Email' }
+          - { property: 'roles', label: 'Roles' }
+          - { property: 'addresses', label: 'Addresses' }
+      form:
+        fields:
+          - { property: 'username', label: 'Username' }
+          - { property: 'email', label: 'Email' }
+          - { property: 'password', label: 'Password' }
+          - { property: 'roles', label: 'Roles' }
+          - { property: 'addresses', label: 'Addresses' }

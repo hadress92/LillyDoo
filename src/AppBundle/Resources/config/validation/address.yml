@@ -1,0 +1,18 @@
+AppBundle\Entity\Address:
+  properties:
+    firstname:
+      - NotBlank: ~
+    lastname:
+      - NotBlank: ~
+    streetNumber:
+      - NotBlank: ~
+    zipCode:
+      - NotBlank: ~
+    city:
+      - NotBlank: ~
+    country:
+      - NotBlank: ~
+    phoneNumber:
+      - NotBlank: ~
+    birthday:
+      - NotBlank: ~
