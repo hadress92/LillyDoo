@@ -1639,5 +1639,35 @@
         <target>delete</target>
       </segment>
     </unit>
+    <unit id="awzJBNC" name="Users">
+      <segment>
+        <source>Users</source>
+        <target>Users</target>
+      </segment>
+    </unit>
+    <unit id="EVomtRz" name="Add User">
+      <segment>
+        <source>Add User</source>
+        <target>Add User</target>
+      </segment>
+    </unit>
+    <unit id="47ienTP" name="Username">
+      <segment>
+        <source>Username</source>
+        <target>Username</target>
+      </segment>
+    </unit>
+    <unit id="wlM3BVR" name="Roles">
+      <segment>
+        <source>Roles</source>
+        <target>Roles</target>
+      </segment>
+    </unit>
+    <unit id="dhear8Q" name="Addresses">
+      <segment>
+        <source>Addresses</source>
+        <target>Addresses</target>
+      </segment>
+    </unit>
   </file>
 </xliff>

@@ -16,7 +16,7 @@ easy_admin:
           - { property: 'lastname' }
           - { property: 'streetNumber' }
           - { property: 'zipCode', template: 'easyadmin/address/preview_fields/zipcode.html.twig'  }
-          - { property: 'city' }
+          - { property: 'city'}
           - { property: 'country', template: 'easyadmin/address/preview_fields/country.html.twig' }
           - { property: 'phoneNumber', template: 'easyadmin/address/preview_fields/phonenumber.html.twig' }
           - { property: 'birthday' }

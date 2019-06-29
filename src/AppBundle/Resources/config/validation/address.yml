@@ -14,5 +14,6 @@ AppBundle\Entity\Address:
       - NotBlank: ~
     phoneNumber:
       - NotBlank: ~
+      - Misd\PhoneNumberBundle\Validator\Constraints\PhoneNumber: ~
     birthday:
       - NotBlank: ~

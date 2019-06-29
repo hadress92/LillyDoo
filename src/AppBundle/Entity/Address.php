@@ -69,7 +69,7 @@ class Address
     /**
      * @var int
      *
-     * @ORM\Column(name="phoneNumber", type="integer")
+     * @ORM\Column(name="phoneNumber", type="phone_number")
      */
     private $phoneNumber;
 
@@ -100,7 +100,7 @@ class Address
     private $user;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="datetime", nullable=true)
      * @var \DateTime
      */
     private $updatedAt;
